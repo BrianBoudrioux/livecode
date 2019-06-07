@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>trololol login</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    	<style>
+    		body 		{ padding-top:80px; background-color: "#363636"; }
+    	</style>
+    </head>
+    <body>
+        <div class="container">
+            <% if (typeof error !== 'undefined') { %>
+                <h3><%= error %></h3>
+            <% } %>
+        	<div class="jumbotron text-center">
+        		<h1><span class="fa fa-lock"></span> trololol</h1>
+
+        		<p>Signup :</p>
+        		<form class="form-group" method="post">
+                    <input type="text" name="email" placeholder="Votre email">
+                    <input type="password" name="password" placeholder="Votre mot de passe">
+                    <input type="password" name="passwordConfirm" placeholder="Confirmer votre mot de passe">
+                    <input type="submit">
+                </form>
+        	</div>
+
+        </div>
+    </body>
+</html>
