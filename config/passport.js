@@ -4,8 +4,8 @@ var mongoose = require('mongoose'),
     User = mongoose.model('User');
 
 passport.use(new FacebookStrategy({
-     clientID: '299482780937958',
-     clientSecret: 'bb56e5fe60e07ac6ab2f2733a5c67ac6',
+     clientID: 'nope',
+     clientSecret: 'ehehe',
      callbackURL: "http://localhost:3000/auth/facebook/callback"
     },
     function(accessToken, refreshToken, profile, done) {
